@@ -1,0 +1,507 @@
+.artspace {
+    text-align: center;
+    animation: slideIn 1.5s forwards ease-in-out;
+    ;
+}
+body{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(54,54,54,1) 40%, rgba(0,255,162,1) 100%);;
+background-size:cover ;
+  
+}
+.artspace{
+text-align: center;
+top: 70px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 80px;
+color: aliceblue;
+}
+#welcome{
+text-align: center;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .facebook {
+    --color: #1877f2;
+  }
+  .twitter {
+    --color: #1da1f2;
+  }
+  .instagram {
+    --color: #e4405f;
+  }
+  .github {
+    --color: #333333;
+  }
+  .youtube {
+    --color: #cd201f;
+  }
+  
+  .icon:hover,
+  .icon:hover .tooltip,
+  .icon:hover .tooltip::before {
+    background: var(--color);
+    color: white;
+  }
+
+.wrapper {
+display: inline-flex;
+list-style: none;
+}
+
+.wrapper .icon {
+position: relative;
+background: #ffffff;
+border-radius: 50%;
+padding: 15px;
+margin: 10px;
+width: 50px;
+height: 50px;
+font-size: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+position: absolute;
+top: 0;
+font-size: 14px;
+background: #ffffff;
+color: #ffffff;
+padding: 5px 8px;
+border-radius: 5px;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+opacity: 0;
+pointer-events: none;
+transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+position: absolute;
+content: "";
+height: 8px;
+width: 8px;
+background: #ffffff;
+bottom: -3px;
+left: 50%;
+transform: translate(-50%) rotate(45deg);
+transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+top: -45px;
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.facebook {
+--color: #1877f2;
+}
+.twitter {
+--color: #1da1f2;
+}
+.instagram {
+--color: #e4405f;
+}
+.github {
+--color: #333333;
+}
+.youtube {
+--color: #cd201f;
+}
+
+.icon:hover,
+.icon:hover .tooltip,
+.icon:hover .tooltip::before {
+background: var(--color);
+color: white;
+}
+.socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f93a;
+    border-radius: 20px;
+
+
+}
+.productbox{
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+    border: 20px solid #12101000;
+    padding: 30px;
+    
+    
+    margin: 20px;
+
+    background-color: #0c0c0c90;
+    border-radius: 20px;
+    
+    
+}
+.box1{
+display: flex;
+background-color: #ffffff;
+height: 400px;
+width: 400px;
+margin: 30px solid black;
+margin-right: 3rem;
+background-image:  url(/images/prismacolor.jpg) ;
+background-repeat: no-repeat;
+background-size: contain;
+display:flex;
+border-radius: 50px;
+transition: .5s ease-in-out;
+filter:grayscale(100%);
+
+}
+
+.box2{
+display: flex;
+background-color: rgba(36,57,48,255);
+height: 400px;
+width: 450px;
+margin: 60px solid black;
+margin-right: 3rem;
+background-image: url(/images/polychromos1.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+border-radius: 50px;
+transition: .5s ease-in-out;
+filter:grayscale(100%);
+
+}
+
+.box3{
+display: flex;
+
+background-color: #1e17ea;
+border-radius: 50px;
+height: 400px;
+width: 445px;
+margin-right: 3rem;
+background-image:url(images/brustro.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+transition: .5s ease-in-out;
+filter:grayscale(100%);
+}
+.box4{
+display: flex;
+background-color: #c1d208;
+height: 400px;
+width: 460px;
+border-radius: 50px;
+margin-right: 3rem;
+background-image: url(images/derwent.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+transition: .5s ease-in-out;
+filter:grayscale(100%);
+}
+.box1:hover{
+filter: grayscale(0%);
+transform: scale(1.1);
+transition: 0.5s ease-in-out;
+}
+.box2:hover{
+filter: grayscale(0%);
+transform: scale(1.1);
+transition: 0.5s ease-in-out;
+}
+.box3:hover{
+filter: grayscale(0%);
+transform: scale(1.1);
+transition: 0.5s ease-in-out;
+}
+.box4:hover{
+filter: grayscale(0%);
+transform: scale(1.1);
+transition: 0.5s ease-in-out;
+}
+.name{
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+color: #ffffff;
+text-align: left;
+}
+    
+
+.wat1{
+display: flex;
+background-color: #ffffff;
+height: 400px;
+width: 400px;
+margin: 30px solid black;
+margin-right: 3rem;
+background-image:  url(/images/watercolor/holbein.jpg) ;
+background-repeat: no-repeat;
+background-size: contain;
+display:flex;
+border-radius: 50px;
+transition: .5s ease-in-out;
+filter:grayscale(100%);
+
+
+
+
+}
+
+.wat2{
+display: flex;
+background-color: white;
+height: 400px;
+width: 450px;
+margin: 60px solid black;
+margin-right: 3rem;
+background-image: url(/images/watercolor/ShinHanAWC30_1.webp);
+background-repeat: no-repeat;
+background-size: contain;
+border-radius: 50px;
+transition: .5s ease-in-out;
+filter:grayscale(100%);
+
+
+
+}
+
+.wat3{
+display: flex;
+
+background-color: #1e17ea;
+border-radius: 50px;
+height: 400px;
+width: 445px;
+margin-right: 3rem;
+background-image:url(images/watercolor/winsor\ and\ newton.webp);
+background-size: cover;
+background-repeat: no-repeat;
+transition: .5s ease-in-out;
+filter:grayscale(100%);
+}
+.wat4{
+display: flex;
+background-color: #c1d208;
+height: 400px;
+width: 460px;
+border-radius: 50px;
+margin-right: 3rem;
+background-image: url(images/watercolor/winsor\ and\ new.avif);
+background-size: cover;
+background-repeat: no-repeat;
+transition: .5s ease-in-out;
+filter:grayscale(100%);
+}
+.wat1:hover{
+filter: grayscale(0%);
+transform: scale(1.1);
+transition: 0.5s ease-in-out;
+}
+.wat2:hover{
+filter: grayscale(0%);
+transform: scale(1.1);
+transition: 0.5s ease-in-out;
+}
+.wat3:hover{
+filter: grayscale(0%);
+transform: scale(1.1);
+transition: 0.5s ease-in-out;
+}
+.wat4:hover{
+filter: grayscale(0%);
+transform: scale(1.1);
+transition: 0.5s ease-in-out;
+}
+
+.boxx{
+    display: flex;
+    border-radius: 50px;
+    height: 400px;
+    width: 445px;
+    margin-right: 3rem;
+    transition: .5s ease-in-out;
+    filter:grayscale(100%);
+    background-color: #ffffff;
+    }
+
+    #acr1{
+        background-image:url(images/acrylic/shutter.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #acr2{
+        background-image:url(images/acrylic/winsor.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #acr3{
+        background-image:url(images/acrylic/faber.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #acr4{
+        background-image:url(images/acrylic/brust.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .boxx:hover{
+        filter: grayscale(0%);
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out;
+        }
+
+    .boxx{
+    display: flex;
+    border-radius: 50px;
+    height: 400px;
+    width: 445px;
+    margin-right: 3rem;
+    transition: .5s ease-in-out;
+    filter:grayscale(100%);
+    background-color: #ffffff;
+    }
+
+    #acr1{
+        background-image:url(images/acrylic/shutter.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #acr2{
+        background-image:url(images/acrylic/winsor.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #acr3{
+        background-image:url(images/acrylic/faber.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #acr4{
+        background-image:url(images/acrylic/brust.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .boxx:hover{
+        filter: grayscale(0%);
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out;
+        }
+
+
+
+
+        .boxx{
+    display: flex;
+    border-radius: 50px;
+    height: 400px;
+    width: 445px;
+    margin-right: 3rem;
+    transition: .5s ease-in-out;
+    filter:grayscale(100%);
+    background-color: #ffffff;
+    }
+
+    #g1{
+        background-image:url(images/gouache/holbein2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #g2{
+        background-image:url(images/gouache/mijello.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #g3{
+        background-image:url(images/gouache/turner.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #g4{
+        background-image:url(images/gouache/winsor.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .boxx:hover{
+        filter: grayscale(0%);
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out;
+        }
