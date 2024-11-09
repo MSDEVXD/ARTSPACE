@@ -1,103 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+body {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(/images/baackground.png);
+    background-size: cover;
+}
 
-       
-        
-        
-        
-        .welcome{
-            margin: 5px;
-            padding: 10px;
+.container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
 
-        }
-        h1{
-            color: rgb(255, 255, 255);
-            font-size: 60px;
-            border: 1px solid red;
-            
-        }
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideIn 1.5s forwards ease-in-out;
+}
 
-        body {
-            font-family: 'Arial', sans-serif;
-            background-repeat: no-repeat;
-            background-image: url(images/interface.png);
-            color:#f0f0f0;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-            overflow:hidden;
-            margin-right:100px solid black;
-            margin-top:60px solid rgb(240, 102, 240);
-        }
-        body.background{
-            height: 1450px;
-            width: 100%;
-        }
-        .quote{
-            position: relative;
-            bottom: 300px;
-            left: 300px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 20px;
-        }
+p {
+    font-size: 100px;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: slideIn 2s forwards ease-in-out;
+    animation-delay: 0.5s;
+}
 
-        .container {
-            text-align: center;
-            animation: fadeIn 2s ease-in-out;
-        }
+a {
+    text-decoration: none;
+    opacity: 0;
+    animation: slideIn 2.5s forwards ease-in-out;
+    animation-delay: 1s;
+}
 
-        h1 {
-            font-size: 150px;
-            margin-bottom: 20px;
-            opacity: 0;
-            animation: slideIn 1.5s forwards ease-in-out;
-            
-        }
+button {
+    padding: 10px 10px;
+    background-color: #f40d79;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
 
-        p {
-            font-size: 25px;
-            margin-bottom: 30px;
-            opacity: 0;
-            animation: slideIn 2s forwards ease-in-out;
-            animation-delay: 0.5s;
-        }
+button:hover {
+    background-color: #ff0000;
+    transform: scale(1.1);
+}
 
-        a{
-            text-decoration: none;
-            opacity: 0;
-            animation: slideIn 2.5s forwards ease-in-out;
-            animation-delay: 1s;
-        }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
-        button {
-            padding: 20px 20px;
-            background-color: #ff6347;
-            border: none;
-            border-radius: 10px;
-            color: #fff;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: transform 0.3s, background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #ee74d6;
-            transform: scale(1.05);
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.button {
+    position: relative;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     
+    background-size: 300%;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s;
+}
+
+.button:hover:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-60deg, #fdfcfc4e, rgba(255, 255, 255, 0.142), rgba(255, 255, 255, 0.5));
+    animation: shimmer 1.5s ;
+}
+
+@keyframes shimmer {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
